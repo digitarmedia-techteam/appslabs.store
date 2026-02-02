@@ -13,6 +13,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://appslabs.store"),
   title: "AppsLabs.store | Premium App Development & Solutions",
   description: "AppsLabs is a premium digital engineering lab building next-gen mobile and web applications. We specialize in high-performance React Native, Next.js, and scaling secure cloud infrastructure.",
   keywords: ["App Development", "Web Development", "Next.js", "React Native", "UI/UX Design", "Enterprise Software", "Digital Engineering"],

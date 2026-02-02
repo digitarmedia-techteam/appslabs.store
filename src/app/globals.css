@@ -116,3 +116,37 @@ h6 {
   -webkit-text-fill-color: transparent;
   animation: liquid 4s linear infinite;
 }
+
+/* New Water Flood Effect */
+@keyframes flood-up {
+  0% {
+    background-position: 0% 130%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.water-text {
+  background: linear-gradient(to top,
+      #13465c 40%,
+      /* Deep Water */
+      #818cf8 45%,
+      /* Surface Tint */
+      rgba(255, 255, 255, 0.1) 50%
+      /* Sky/Air */
+    );
+  background-size: 100% 250%;
+  background-position: 0% 100%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: flood-up 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+
+  /* Add a subtle text shadow for depth */
+  filter: drop-shadow(0 0 2px rgba(56, 189, 248, 0.3));
+}
